@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.zoy.firebasereal.Thongtin_setting"
+    android:background="@drawable/login">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A8000000"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/chinhsua_viewid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Tên đăng nhập"
+                android:backgroundTint="#FF6164"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/chinhsua_viewlop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A8000000"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lớp"
+                android:backgroundTint="#FF6164"
+                android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A8000000"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/chinhsua_hoten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Họ và tên"
+                android:inputType="textPersonName|textCapWords"
+                android:backgroundTint="#FF6164"
+                android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A8000000"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/chinhsua_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="#FF6164"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#A8000000"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/chinhsua_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Số điện thoại"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+                android:drawableStart="@drawable/ic_baseline_smartphone_24"
+                android:backgroundTint="#FF6164"
+                android:inputType="number"
+                android:textSize="24sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#A8000000"
+                app:errorEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/chinhsua_pass"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:backgroundTint="#FF6164"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:textSize="24sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/chinhsua_doipass"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="ĐỔI MẬT KHẨU"
+                android:background="@drawable/button_light"
+                android:textColor="@color/while1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/chinhsua_xacnhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonred"
+                android:textColor="@color/while1"
+                android:text="XÁC NHẬN" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/chinhsua_huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonred"
+                android:textColor="@color/while1"
+                android:text="TRỞ LẠI" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

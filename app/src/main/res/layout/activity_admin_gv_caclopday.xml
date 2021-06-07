@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zoy.firebasereal.admin_gv_caclopday"
+    android:orientation="vertical"
+    android:background="@drawable/login">
+
+    <Button
+        android:id="@+id/addlop"
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="THÊM LỚP"
+        android:background="@drawable/button_light"
+        android:textColor="@color/while1"
+        android:textSize="20dp"
+        android:letterSpacing="0.1"
+        />
+    <ListView
+        android:id="@+id/list_class"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/thongtingv"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN GIÁO VIÊN"
+        android:background="@drawable/buttonred"
+        android:textColor="@color/while1"
+        android:textSize="20dp"
+        android:letterSpacing="0.1"/>
+</LinearLayout>

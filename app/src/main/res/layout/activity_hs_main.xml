@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zoy.firebasereal.hsMainActivity"
+    android:background="@drawable/login">
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Viewname"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+
+        <TextView
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/ViewLop"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+        <TextView
+            android:textColor="@color/cardview_light_background"
+            android:id="@+id/ViewTime"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_listtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_tkbbt"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ViewDate"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_btb"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <ListView
+            android:background="@color/cardview_light_background"
+            android:id="@+id/listtxt"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_thanhvienbt"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ViewDshs"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_btb"
+            android:clickable="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <ListView
+            android:background="@color/cardview_light_background"
+            android:id="@+id/listdshs"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:foregroundGravity="center">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ViewGv"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_btb"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <ListView
+            android:background="@color/cardview_light_background"
+            android:id="@+id/listgv"
+            android:layout_width="380dp"
+            android:layout_height="400dp"
+            android:foregroundGravity="center">
+
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_thongbaobt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/thongbaobt"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabar"
+            android:text="THÔNG BÁO"
+            android:textColor="#ECECEC"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_thanhvienbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/thanhvienbt"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabar"
+            android:text="THÀNH VIÊN"
+            android:textColor="#ECECEC"
+            android:layout_marginTop="1dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_tkbbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tkbbt"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabar"
+            android:text="THỜI KHÓA BIỂU"
+            android:textColor="#ECECEC"
+            android:layout_marginTop="1dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_gvbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/gvbt"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabar"
+            android:text="GIÁO VIÊN"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"
+            android:textColor="#ECECEC"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>

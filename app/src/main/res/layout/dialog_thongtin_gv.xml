@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chinhsua_tendn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#DC000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên đăng nhập"
+            android:backgroundTint="#FF6164"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_outline_account_circle_24"
+            android:drawableStart="@drawable/ic_outline_account_circle_24"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chinhsua_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#DC000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawableStart="@drawable/ic_outline_lock_24"
+            android:backgroundTint="#FF6164"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chinhsua_hoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#DC000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF6164"
+            android:hint="Họ và tên"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_twotone_person_24"
+            android:drawableStart="@drawable/ic_twotone_person_24"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chinhsua_mon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#DC000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Môn"
+            android:backgroundTint="#FF6164"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_twotone_school_24"
+            android:drawableStart="@drawable/ic_twotone_school_24"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chinhsua_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#DC000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_smartphone_24"
+            android:drawableStart="@drawable/ic_baseline_smartphone_24"
+            android:backgroundTint="#FF6164"
+            android:inputType="number"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/chinhsua_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#DC000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#FF6164"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/xacnhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/while1"
+        android:background="@drawable/button_light"
+        android:text="Xác nhận" />
+
+    <Button
+        android:id="@+id/huy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/while1"
+        android:background="@drawable/button_light"
+        android:layout_marginTop="10dp"
+        android:text="HỦY" />
+
+</LinearLayout>

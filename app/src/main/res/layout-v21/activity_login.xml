@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/tEmail"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/while1"
+        android:hint="@string/email"
+        android:backgroundTint="#ADF23B5F"
+        android:textColorHint="@android:color/secondary_text_dark"
+        android:layout_centerHorizontal="true"
+        android:inputType="textCapCharacters"
+        android:drawableStart="@drawable/ic_outline_account_circle_24"
+        android:drawableLeft="@drawable/ic_outline_account_circle_24"
+        android:drawablePadding="5dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/tPassword"
+        android:backgroundTint="#ADF23B5F"
+        android:layout_width="350dp"
+        android:textColor="@color/while1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:textColorHint="@android:color/secondary_text_dark"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_outline_lock_24"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:drawablePadding="5dp"
+        android:autofillHints="" />
+    <CheckBox
+        android:id="@+id/save_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tPassword"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/image_checkbox"
+        android:padding="5dp"
+        android:text="@string/save_tk"
+        android:textColor="@android:color/secondary_text_dark"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/tPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/buttonred"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/while1"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

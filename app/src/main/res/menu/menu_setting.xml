@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Thông tin"
+        android:id="@+id/menu_thongtin"/>
+
+    <item android:title="Đăng xuất"
+        android:id="@+id/menu_dangxuat"/>
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delete"
+    android:background="@drawable/login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/tView2"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:text="Delete Student"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:paddingTop="5dp"
+        android:letterSpacing="0.1"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@color/while1"
+        android:background="@drawable/button_fill"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/tID"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:backgroundTint="#FF6164"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:textColorHint="#D8186C91"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:hint="ID" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/while1"
+            android:background="@drawable/button_light"
+            android:text="Delete" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

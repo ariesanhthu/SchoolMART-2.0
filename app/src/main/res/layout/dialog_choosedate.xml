@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#8FC6C5C5"
+    android:alpha="20" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/button_fill"
+            android:textColor="#FFFFFF"
+            android:text="Chọn ngày"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Thứ 2"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:button="@drawable/custom_radio_check"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Thứ 3"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:button="@drawable/custom_radio_check"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Thứ 4"
+                android:button="@drawable/custom_radio_check"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Thứ 5"
+                android:button="@drawable/custom_radio_check"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:button="@drawable/custom_radio_check"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:text="Thứ 6"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Thứ 7"
+                android:button="@drawable/custom_radio_check"
+                android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/chonbt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_light"
+                android:text="Chọn"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/huybtdialog"
+                android:layout_width="150dp"
+                android:layout_marginLeft="3dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_light"
+                android:textColor="#ffff"
+                android:text="Hủy"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

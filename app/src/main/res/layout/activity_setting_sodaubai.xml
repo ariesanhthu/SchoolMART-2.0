@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sodaubai_baihoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColorHint="#A8000000"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bài học"
+            android:backgroundTint="#E81E92C6"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:background="@drawable/border1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:text="Xếp loại: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:id="@+id/gr_diem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/chose_a"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/chose_b"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/chose_c"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/chose_d"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:textSize="20sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/border1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:text="Tiết học tốt: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/gr_tiethoctot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/chose_dat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đạt"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/chose_khongdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không đạt"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/chose_khongdangki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không đăng kí"
+                android:textSize="20sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@drawable/border1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:scrollbars="vertical">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/view_vipham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textFilter|textMultiLine"
+            android:scrollbars="vertical"
+            android:text="Vi phạm:"
+            android:textColor="#A8000000"
+            android:textSize="26dp"/>
+    </ScrollView>
+
+    <ScrollView
+        android:background="@drawable/border1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:scrollbars="vertical">
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/view_siso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textFilter|textMultiLine"
+        android:scrollbars="vertical"
+        android:text="Vắng:"
+        android:textColor="#A8000000"
+        android:textSize="26dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_siso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_custom"
+        android:text="ĐIỂM DANH"
+        android:textColor="@color/while1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_vipham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_custom"
+        android:text="VI PHẠM"
+        android:textColor="@color/while1"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/xacnhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_custom"
+        android:text="XÁC NHẬN"
+        android:textColor="@color/while1"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zoy.firebasereal">
+
+    <application
+        android:name=".Module"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".vipham_setting"></activity>
+        <activity android:name=".vipham" />
+        <activity android:name=".admin_gvlist" />
+        <activity android:name=".setting_siso" />
+        <activity android:name=".setting_sodaubai" />
+        <activity android:name=".admin_gv_caclopday" />
+        <activity android:name=".admin_hslist" />
+        <activity
+            android:name=".show_sodaubai"
+            android:parentActivityName=".gvMainActivity" />
+        <activity
+            android:name=".thongtin_lop"
+            android:parentActivityName=".gvMainActivity" />
+        <activity android:name=".Thongtin_setting" />
+        <activity android:name=".gvMainActivity" />
+        <activity
+            android:name=".admin_tkb"
+            android:parentActivityName=".Admin" />
+        <activity android:name=".Admin" />
+        <activity android:name=".hsMainActivity" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Showdata" />
+        <activity android:name=".Update" />
+        <activity android:name=".Delete" />
+        <activity android:name=".Register" />
+    </application>
+
+</manifest>

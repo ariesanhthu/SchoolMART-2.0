@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zoy.firebasereal.admin_hslist"
+    android:orientation="vertical"
+    android:background="@drawable/login">
+
+    <EditText
+        android:selectAllOnFocus="true"
+        android:inputType="text"
+        android:hint="Tìm kiếm..."
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:backgroundTint="#FF6164"
+        android:id="@+id/search_id"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:background="@color/cardview_light_background"
+        android:id="@+id/hs_list"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

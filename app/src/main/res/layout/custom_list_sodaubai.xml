@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view_sodaubai"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="#943BAAFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/custom_thoigian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thời gian"
+            />
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/custom_giaovien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giáo viên"/>
+
+            <TextView
+                android:id="@+id/custom_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/custom_giaovien"
+                android:text="Môn"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/custom_baihoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bài học: "/>
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/custom_siso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sỉ sổ học sinh"/>
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/custom_diem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điểm tiết học"/>
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/custom_thtot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiết học tốt"/>
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/custom_vipham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|right"
+            android:text="Vi phạm" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

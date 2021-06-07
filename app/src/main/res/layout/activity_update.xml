@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tView2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Update"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:paddingVertical="5dp"
+            android:textColor="@color/while1"
+            android:letterSpacing="0.1"
+            android:background="@drawable/tabar"/>
+        <EditText
+            android:id="@+id/tID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#E81E92C6"
+            android:textColorHint="@android:color/secondary_text_dark"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_accountblue_circle_24"
+            android:drawableStart="@drawable/ic_baseline_accountblue_circle_24"
+            android:hint="ID" />
+        <EditText
+            android:id="@+id/tEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#E81E92C6"
+            android:textColorHint="@android:color/secondary_text_dark"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_emailblue_24"
+            android:drawableStart="@drawable/ic_baseline_emailblue_24"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/tName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/secondary_text_dark"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_twotone_perm_identity_24"
+            android:drawableStart="@drawable/ic_twotone_perm_identity_24"
+            android:backgroundTint="#E81E92C6"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/tPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/secondary_text_dark"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:backgroundTint="#E81E92C6"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_lockblue_24"
+            android:drawableStart="@drawable/ic_baseline_lockblue_24"
+            android:hint="Password" />
+        <EditText
+            android:id="@+id/tConfirmPassword"
+            android:layout_width="match_parent"
+            android:textColorHint="@android:color/secondary_text_dark"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:backgroundTint="#E81E92C6"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_twotone_lock_24"
+            android:drawableStart="@drawable/ic_twotone_lock_24"
+            android:hint="Confirm Password" />
+        <Button
+            android:id="@+id/btnUpadate"
+            android:layout_width="match_parent"
+            android:textColorHint="@android:color/secondary_text_dark"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_btb"
+            android:textSize="17dp"
+            android:textColor="@color/while1"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_btb"
+            android:text="Cancel"
+            android:textColor="@color/while1"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

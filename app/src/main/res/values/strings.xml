@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SchoolMART</string>
+    <string name="email">emailt</string>
+    <string name="password">tpassword</string>
+    <string name="save_tk">Lưu tài khoản</string>
+    <string name="tlogin">ĐĂNG NHẬP</string>
+    <string name="ttodo">TODO</string>
+    <string name="string_ttodo">todo</string>
+    <string name="string_string_ttodo">todo</string>
+</resources>

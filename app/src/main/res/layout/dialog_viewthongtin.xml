@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_fill"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="THÔNG TIN"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView16"
+        android:id="@+id/dialog_viewname"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textIsSelectable="true"/>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dialog_viewname"
+        android:id="@+id/dialog_viewemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textIsSelectable="true"/>
+
+    <TextView
+        android:layout_marginLeft="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dialog_viewemail"
+        android:id="@+id/dialog_viewsdt"
+        android:layout_width="300dp"
+        android:textIsSelectable="true"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/dialog_okbt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_viewsdt"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_light"
+        android:text="OK"
+        android:textColor="#ffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+

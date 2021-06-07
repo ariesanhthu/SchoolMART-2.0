@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_diem"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sodaubai_diem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Điểm"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_tht"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sodaubai_tht"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiết học tốt"
+            android:inputType="textPersonName|textCapWords"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_vipham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sodaubai_vipham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vi phạm"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_siso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sodaubai_siso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sỉ số lớp"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textSize="24sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/xacnhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XÁC NHẬN"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
